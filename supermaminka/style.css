@@ -1,0 +1,222 @@
+/*
+Theme Name: Supermaminka
+Author: Vlasta Polach
+Description: Šablona pro online video kurz a blog
+Version: 1.0.1
+Tags: bootstrap, responsive, blog
+*/
+
+body {
+	color: #555555;
+  background-color:#ffffff;
+  font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	line-height: 25px;
+}
+a {
+	color: #f46d4c;
+}
+a:hover {
+	color: #db594c;
+}
+p img {
+	max-width: 100%;
+	max-height: auto;
+	height: auto;
+}
+/* Hlavní menu */
+.navbar-default {
+	background-color: transparent;
+	border-radius: 0;
+	border: none;
+	padding: 20px 10px 0px 10px;
+	color: #ffffff;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+	color: #333333;
+}
+.navbar-default .navbar-brand {
+	font-size: 20px;
+}
+.navbar-default .navbar-nav>li {
+	font-size: 15px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #db594c;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	color: #f46d4c;
+	background-color: transparent;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: none;
+}
+.dropdown-menu>li>a {
+	padding: 8px 25px;
+}
+.dropdown-menu>li>a:hover {
+	background-color: #db594c;
+	color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #555555;
+}
+.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	min-width: 240px;
+}
+.menu li {
+	padding: 10px 10px 10px 20px;
+}
+.menu li a {
+	color: #555555;
+}
+.menu li a:hover {
+	color: #db594c;
+}
+
+
+/* Jumbotron */
+.container-fluid .jumbotron {
+	border-radius: 0;
+	margin: 0px -15px 0 -15px;
+	padding: 50px 0 260px 0;
+	background: #db594c;
+  background-image: -webkit-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: -moz-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: -o-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: -ms-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: linear-gradient(45deg, #f46d4c, #db534c);
+	color: #ffffff;
+}
+#jumbo-blog {
+	padding: 50px 0 60px 0;
+	margin-bottom: 10px;
+}
+
+/* Obsah - homepage */
+.video-iframe {
+	margin-top: -210px;
+	margin-bottom: 40px;
+}
+
+/* Obsah - 3 vlastnosti */
+#about {
+	padding-bottom: 60px;
+}
+.ico {
+	color: #db534c;
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
+.cta {
+	padding-top: 40px;
+}
+.btn-cta {
+	color: #ffffff;
+	background-color: #db534c;
+	border: 2px solid #db534c;
+	padding: 12px 30px;
+}
+.btn-cta:hover {
+	color: #db534c;
+	background-color: #ffffff;
+	border: 2px solid #db534c;
+}
+/* Obsah - text */
+.spacing {
+	padding: 10px 0;
+}
+.spacing-photo {
+	padding: 25px 0 0 0;
+}
+.spacing-blog {
+	padding-bottom: 35px;
+}
+.spacing-big {
+	padding: 40px 0;
+}
+.spacing-top {
+	padding-top: 40px;
+}
+.spacing-bottom {
+	margin-bottom: 60px;
+}
+.next-lesson {
+	padding-bottom: 25px;
+}
+.cta-button-spacing {
+	margin-top: -25px;
+	padding-bottom: 35px;
+}
+.attachment-post-thumbnail {
+	max-width: 100%;
+	max-height: auto;
+	height: auto;
+}
+
+/* Patička */
+footer {
+	border-radius: 0;
+	padding: 40px 0;
+	background: #db594c;
+  background-image: -webkit-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: -moz-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: -o-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: -ms-linear-gradient(45deg, #f46d4c, #db534c);
+  background-image: linear-gradient(45deg, #f46d4c, #db534c);
+	color: #ffffff;
+}
+.logo-vp {
+	width: auto;
+	height: 35px;
+	float: left;
+}
+.logo-bu {
+	width: auto;
+	height: 35px;
+	float: right;
+}
+
+/* Pro mobily */
+@media (max-width: 767px) {
+	body {
+    font-size: 14px;
+	}
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+		background-color: rgba(244,109,76,0.3);
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: #555555;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:active {
+		color: #f46d4c;
+	}
+	.menu {
+		padding: 0 0 0 40px;
+	}
+	footer {
+		border-radius: 0;
+		padding: 30px 0 ;
+	}
+}
+@media (max-width: 420px) {
+	.top-text {
+		display: inline-block;
+		max-width: 180px;
+		margin-top: -12px;
+		padding-left: 4px;
+	}
+	.fa-heartbeat {
+		vertical-align: top;
+	}
+}
